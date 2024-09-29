@@ -1,0 +1,126 @@
+/*============= Fonts =============*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?tujzzz");
+  src: url("../fonts/icomoon.eot?tujzzz#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?tujzzz") format("truetype"), url("fonts/icomoon.woff?tujzzz") format("woff"),
+    url("../fonts/icomoon.svg?tujzzz#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniE911:before {
+  content: "\e911";
+}
+.icon-uniE900:before {
+  content: "\e900";
+}
+.icon-Bitcoin:before {
+  content: "\e901";
+}
+.icon-Calendar:before {
+  content: "\e902";
+}
+.icon-Card:before {
+  content: "\e903";
+}
+.icon-Discord:before {
+  content: "\e904";
+}
+.icon-Dots:before {
+  content: "\e905";
+}
+.icon-Dribble:before {
+  content: "\e906";
+}
+.icon-Email:before {
+  content: "\e907";
+}
+.icon-Figma:before {
+  content: "\e908";
+}
+.icon-Github:before {
+  content: "\e909";
+}
+.icon-Landmark:before {
+  content: "\e90a";
+}
+.icon-Linkedin:before {
+  content: "\e90b";
+}
+.icon-Play:before {
+  content: "\e90c";
+}
+.icon-Style-Outline:before {
+  content: "\e90d";
+}
+.icon-Telegram:before {
+  content: "\e90e";
+}
+.icon-Twitter:before {
+  content: "\e90f";
+}
+.icon-Union:before {
+  content: "\e910";
+}
+
+/*============= Body =============*/
+* {
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--white);
+  background-color: var(--background);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1054px;
+  padding: 0 16px;
+  background-color: var(--background-content);
+}
+
+/*============= Main =============*/
+
+/*============= Footer =============*/
+
+/*============= Buttons =============*/
+a {
+  color: var(--white);
+}
+
+/*============= Media =============*/
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,10 @@
+/*============= Variables =============*/
+:root {
+  --white: #ffffff;
+  --background: #282c33;
+  --background-content: #2c3036;
+  --primary: #c778dd;
+  --gray: #abb2bf;
+
+  --transform-04: all 0.4s ease;
+}
