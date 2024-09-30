@@ -203,9 +203,6 @@
 }
 
 /*============= Buttons =============*/
-a {
-  color: var(--white);
-}
 
 .btn {
   display: flex;
@@ -216,6 +213,22 @@ a {
   background: transparent;
   transition: var(--transform-04);
   cursor: pointer;
+}
+
+.btn.text-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--white);
+}
+
+.btn.text-btn:hover {
+  color: var(--gray);
 }
 
 .btn.primary {
@@ -237,7 +250,7 @@ a {
 }
 
 /*============= Quote =============*/
-.quote {
+section {
   padding: 65px 0;
 }
 
@@ -301,6 +314,165 @@ a {
   top: -1px;
   right: 4px;
 }
+
+/*============= Section =============*/
+.section-title {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.section-title h2 {
+  position: relative;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+  color: var(--white);
+}
+
+.line {
+  position: absolute;
+  content: "";
+  left: 190px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 1px;
+  background: var(--primary);
+}
+
+.line-1 {
+  max-width: 511px;
+}
+
+.line-2 {
+  max-width: 239px;
+  left: 153px;
+}
+
+.line-3 {
+  max-width: 326px;
+}
+
+.line-4 {
+  max-width: 127px;
+}
+
+.section-title h2 span {
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--primary);
+}
+
+/*============= Project Card =============*/
+.projects--group {
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+}
+
+.project--card {
+  width: 33.33%;
+  color: var(--gray);
+  border: 1px solid var(--gray);
+  overflow: hidden;
+}
+
+.project--card img {
+  width: 100%;
+}
+
+.use-t {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  list-style-type: none;
+  padding: 8px;
+}
+
+.card--content {
+  padding: 16px;
+  border-top: 1px solid var(--gray);
+}
+
+.card--content h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.card--content p {
+  margin-bottom: 16px;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*============= Skills =============*/
+.cont-images {
+  transform: translate(33px, -36px);
+}
+
+.cont-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 16px;
+  list-style-type: none;
+}
+
+.second-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+  color: var(--gray);
+}
+
+.cont-list > li {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  border: 1px solid var(--gray);
+}
+
+.cont-list > li:nth-child(1),
+.cont-list > li:nth-child(2),
+.cont-list > li:nth-child(4) {
+  max-width: 180px;
+}
+
+.cont-list > li:nth-child(4) {
+  transform: translateY(-32px);
+}
+
+.cont-list p {
+  border-bottom: 1px solid var(--gray);
+  padding: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/*============= About Me =============*/
+
+/*============= Contacts =============*/
+
+/*============= Responsive Styles =============*/
 
 /* Responsive Styles */
 @media (max-width: 768px) {
