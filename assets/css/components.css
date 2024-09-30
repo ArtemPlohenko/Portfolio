@@ -202,6 +202,106 @@
   display: block;
 }
 
+/*============= Buttons =============*/
+a {
+  color: var(--white);
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 10px;
+  background: transparent;
+  transition: var(--transform-04);
+  cursor: pointer;
+}
+
+.btn.primary {
+  color: var(--white);
+  border: 1px solid var(--primary);
+}
+
+.btn.primary:hover {
+  background: rgba(199, 120, 221, 0.2);
+}
+
+.btn.secondary {
+  color: var(--gray);
+  border: 1px solid var(--gray);
+}
+
+.btn.secondary:hover {
+  background: rgba(171, 178, 191, 0.2);
+}
+
+/*============= Quote =============*/
+.quote {
+  padding: 65px 0;
+}
+
+.quote-group {
+  position: relative;
+  max-width: 714px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.quote-group p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.comment,
+.who {
+  position: relative;
+  color: var(--white);
+  border: 1px solid var(--gray);
+  width: 100%;
+}
+
+.who p {
+  font-weight: 400;
+}
+
+.icon-quote-1,
+.icon-quote-2 {
+  position: absolute;
+  font-size: 26px;
+  width: 42px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-content);
+}
+
+.icon-quote-1 {
+  top: -15px;
+  left: 8px;
+}
+
+.icon-quote-2 {
+  top: -14px;
+  right: 13px;
+}
+
+.comment {
+  padding: 32px;
+}
+
+.who {
+  padding: 16px;
+  white-space: nowrap;
+  max-width: 162px;
+  top: -1px;
+  right: 4px;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .header-content {
