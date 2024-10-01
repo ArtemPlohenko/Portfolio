@@ -155,7 +155,7 @@ a {
 }
 
 .banner {
-  padding: 84px 0 38px;
+  padding: 38px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -420,6 +420,10 @@ footer .container {
 
   .banner--picture img {
     width: 100%;
+  }
+
+  .banner {
+    padding: 84px 0 38px;
   }
 }
 
