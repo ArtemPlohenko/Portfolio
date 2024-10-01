@@ -167,7 +167,6 @@ a {
 }
 
 .banner--picture img {
-  width: 100%;
   z-index: 1;
   position: relative;
 }
@@ -417,6 +416,10 @@ footer .container {
 
   .banner--currently {
     max-width: 350px;
+  }
+
+  .banner--picture img {
+    width: 100%;
   }
 }
 
