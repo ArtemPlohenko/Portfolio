@@ -2,10 +2,12 @@ document.addEventListener("DOMContentLoaded", function () {
   /*============= Burger Menu =============*/
   const burger = document.getElementById("burger");
   const nav = document.querySelector(".nav");
+  const body = document.body;
 
   burger.addEventListener("click", () => {
     nav.classList.toggle("active");
     burger.classList.toggle("active");
+    body.classList.toggle("no-scroll");
   });
 
   /*============= Language Dropdown =============*/
@@ -21,14 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const resources = {
     en: {
       translation: {
-        welcome: "Welcome",
-        description: "This is a simple language switcher example.",
+        description: "With great power comes great electricity bill",
       },
     },
     uk: {
       translation: {
-        welcome: "Вітаємо",
-        description: "Це приклад простого перемикача мови.",
+        description: "Велика потужність приносить великі рахунки за електроенергію",
       },
     },
   };
@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   function updateContent() {
-    document.getElementById("welcome-msg").textContent = i18next.t("welcome");
     document.getElementById("description-msg").textContent = i18next.t("description");
   }
 

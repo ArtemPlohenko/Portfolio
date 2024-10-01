@@ -53,10 +53,7 @@
 
   <!--============= Main =============-->
   <main>
-
     <div class="container">
-      <!-- <h1 id="welcome-msg">Welcome</h1>
-      <p id="description-msg">This is a simple language switcher example.</p> -->
       <section class="banner">
         <div class="banner--title">
           <h1>Elias is a <span>web designer</span> and <span>front-end
@@ -115,7 +112,6 @@
               <circle class="circle" cx="82" cy="82" r="2" fill="#ABB2BF" />
             </svg>
           </div>
-
           <div class="banner--currently">
             <p>Currently working on <span>Portfolio</span></p>
           </div>
@@ -126,7 +122,7 @@
         <div class="quote-group">
           <div class="comment">
             <span class="icon-quote-1 icon-uniE900"></span>
-            <p>With great power comes great electricity bill</p>
+            <p id="description-msg">With great power comes great electricity bill</p>
           </div>
           <div class="who">
             <span class="icon-quote-2 icon-uniE900"></span>
@@ -139,10 +135,8 @@
         <div class="section-title">
           <h2><span class="icon-uniE911"></span>projects <div class="line line-1"></div>
           </h2>
-
           <a href="#" class="btn text-btn">View all ~~></a>
         </div>
-
         <div class="projects--group">
           <div class="project--card">
             <img src="assets/img/projects-1.png" alt="">
@@ -161,7 +155,6 @@
               </div>
             </div>
           </div>
-
           <div class="project--card">
             <img src="assets/img/projects-2.png" alt="">
             <ul class="use-t">
@@ -206,7 +199,6 @@
           <h2><span class="icon-uniE911"></span>skills <div class="line line-2"></div>
           </h2>
         </div>
-
         <div class="content-row">
           <div class="cont-images">
             <img src="assets/img/skills.png" alt="skills">
@@ -276,8 +268,7 @@
           <h2><span class="icon-uniE911"></span>about-me <div class="line line-3"></div>
           </h2>
         </div>
-
-        <div class="content-row">
+        <div class="content-row content-row__media">
           <div class="content-text">
             <p>Hello, i’m Elias!</p>
             <p>I’m a self-taught front-end developer based in Kyiv, Ukraine. I can develop responsive websites from
@@ -288,10 +279,8 @@
               various clients to establish their presence online. I always strive to learn about the newest technologies
               and
               frameworks.</p>
-
             <button class="btn primary">Read more -></button>
           </div>
-
           <div class="content-img">
             <img src="assets/img/second-img.png" alt="second-img">
           </div>
@@ -303,16 +292,53 @@
           <h2><span class="icon-uniE911"></span>contacts <div class="line line-4"></div>
           </h2>
         </div>
-
-        <div class="content-row"></div>
+        <div class="content-row">
+          <div class="content-text">
+            <p>I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate
+              to contact me</p>
+          </div>
+          <div class="contact-message">
+            <p>Message me here</p>
+            <a href="https://discord.com" target="_blank"><span class="icon-Discord"></span> !Elias#3519</a>
+            <a href="mailto:elias@elias.me"><span class="icon-Email"></span> elias@elias.me</a>
+          </div>
+        </div>
       </section>
-
-
     </div>
   </main>
 
   <!--============= Footer =============-->
-  <footer></footer>
+  <footer>
+    <div class="container">
+      <div class="footer-info">
+        <div class="footer-about">
+          <ul>
+            <li>
+              <a href="" class="footer-logo">
+                <span class="icon-Union"></span>
+                Elias
+              </a>
+            </li>
+            <li>
+              <a href="mailto:elias@elias-dev.ml">elias@elias-dev.ml</a>
+            </li>
+          </ul>
+          <p>Web designer and front-end developer</p>
+        </div>
+        <div class="media">
+          <p>Media</p>
+          <div class="media-links">
+            <a href="#github"><span class="icon-Github"></span></a>
+            <a href="#figma"><span class="icon-Figma"></span></a>
+            <a href="#discord"><span class="icon-Discord"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; Copyright 2022. Made by Elias</p>
+      </div>
+    </div>
+  </footer>
 
   <!--============= Script =============-->
   <script src="https://unpkg.com/i18next@21.8.14/dist/umd/i18next.min.js"></script>

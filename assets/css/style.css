@@ -123,6 +123,10 @@ a {
   color: var(--white);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /*============= Main =============*/
 .banner--title {
   margin-top: -50px;
@@ -155,6 +159,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .banner--picture {
@@ -162,6 +167,7 @@ a {
 }
 
 .banner--picture img {
+  width: 100%;
   z-index: 1;
   position: relative;
 }
@@ -331,13 +337,117 @@ a {
 }
 
 /*============= Footer =============*/
+footer {
+  border-top: 1px solid var(--gray);
+}
+
+footer .container {
+  padding: 32px 16px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  margin-bottom: 48px;
+}
+
+.footer-about ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+.footer-about ul li:last-child a {
+  color: var(--gray);
+}
+
+.footer-about p {
+  line-height: 21px;
+}
+
+.media p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 12px;
+}
+
+.media-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.media-links a span {
+  font-size: 32px;
+  color: var(--gray);
+  transition: var(--transform-04);
+}
+
+.media-links a span:hover {
+  color: var(--white);
+}
+
+.copyright {
+  color: var(--gray);
+  text-align: center;
+}
 
 /*============= Media =============*/
-@media (min-width: 480px) {
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .container::before {
+    left: 0;
+    right: 0;
+  }
+
+  .banner--picture {
+    width: 50%;
+  }
+
+  .banner--currently {
+    max-width: 350px;
+  }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner--title {
+    margin-top: 0;
+  }
+
+  .banner--picture {
+    width: 80%;
+  }
+
+  .banner--currently {
+    max-width: max-content;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 600px) {
+  .footer-info {
+    flex-wrap: wrap;
+  }
+
+  .footer-about {
+    margin-bottom: 30px;
+  }
 }
