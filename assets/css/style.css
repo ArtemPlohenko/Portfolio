@@ -162,6 +162,14 @@ a {
   gap: 16px;
 }
 
+.banner-small {
+  margin-bottom: -65px;
+}
+
+.banner-small .banner--title {
+  margin-top: 0;
+}
+
 .banner--picture {
   position: relative;
 }

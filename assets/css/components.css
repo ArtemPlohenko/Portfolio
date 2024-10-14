@@ -383,12 +383,13 @@ section {
 /*============= Project Card =============*/
 .projects--group {
   display: flex;
-  justify-content: space-between;
-  gap: 11px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
 .project--card {
-  width: 33.33%;
+  width: 32%;
   height: 100%;
   color: var(--gray);
   border: 1px solid var(--gray);
@@ -585,6 +586,10 @@ section {
   .cont-info {
     width: 70%;
   }
+
+  .project--card {
+    width: 48%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -682,13 +687,9 @@ section {
     max-width: 120px;
   }
 
-  .projects--group {
-    flex-wrap: wrap;
-  }
-
-  .project--card {
+  /* .project--card {
     width: 48%;
-  }
+  } */
 
   .content-text,
   .content-img {
