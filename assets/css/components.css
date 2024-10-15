@@ -256,6 +256,10 @@ section {
   padding: 65px 0;
 }
 
+section:last-child {
+  padding-bottom: 150px;
+}
+
 .quote-group {
   position: relative;
   max-width: 714px;
@@ -484,6 +488,18 @@ section {
   transform: translateY(-32px);
 }
 
+.skills-about .cont-info {
+  width: 100%;
+}
+
+.skills-about .cont-list {
+  justify-content: flex-start;
+}
+
+.skills-about .cont-list > li {
+  transform: translateY(0);
+}
+
 .cont-list p {
   border-bottom: 1px solid var(--gray);
   padding: 8px;
@@ -527,6 +543,7 @@ section {
   align-items: flex-start;
   padding: 16px;
   gap: 11px;
+  height: min-content;
 }
 
 .contact-message p {
@@ -535,7 +552,8 @@ section {
   line-height: 21px;
 }
 
-.contact-message a {
+.contact-message a,
+.media-wrap a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -547,12 +565,62 @@ section {
   transition: var(--transform-04);
 }
 
-.contact-message a:hover {
+.contact-message a:hover,
+.media-wrap a:hover {
   color: var(--white);
 }
 
-.contact-message a span {
+.contact-message a span,
+.media-wrap a span {
   font-size: 32px;
+}
+
+.contact-wrap {
+  display: flex;
+  gap: 11px;
+}
+
+.media-wrap {
+  display: flex;
+  gap: 22px;
+}
+
+.facts-wrap {
+  display: flex;
+  gap: 40px;
+}
+
+.facts-wrap ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--gray);
+}
+
+.facts-wrap ul li {
+  padding: 8px;
+  border: 1px solid var(--gray);
+  height: max-content;
+}
+
+.facts-wrap ul li p {
+  margin: 0;
+}
+
+.facts-wrap ul li p span {
+  color: var(--white);
+}
+
+.img-wrap {
+  max-width: 200px;
+  margin-right: 8%;
+}
+
+.img-wrap img {
+  width: 100%;
 }
 
 /*============= Responsive Styles =============*/
@@ -687,10 +755,6 @@ section {
     max-width: 120px;
   }
 
-  /* .project--card {
-    width: 48%;
-  } */
-
   .content-text,
   .content-img {
     margin-top: 0;
@@ -707,6 +771,10 @@ section {
   .content-img {
     width: 60%;
     margin: 0 auto;
+  }
+
+  .img-wrap {
+    margin-right: 0;
   }
 }
 
@@ -752,5 +820,25 @@ section {
 
   section {
     padding: 30px 0;
+  }
+
+  .contact-wrap {
+    flex-wrap: wrap;
+  }
+
+  .contact-wrap .contact-message {
+    width: 100%;
+  }
+
+  .facts-wrap {
+    flex-direction: column-reverse;
+  }
+
+  .img-wrap {
+    margin: 0 auto 30px;
+  }
+
+  .facts-wrap ul li {
+    width: 100%;
   }
 }

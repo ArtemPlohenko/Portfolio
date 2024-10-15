@@ -127,6 +127,10 @@ a {
   overflow: hidden;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /*============= Main =============*/
 .banner--title {
   margin-top: -50px;

@@ -48,7 +48,11 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   function updateContent() {
-    document.getElementById("description-msg").textContent = i18next.t("description");
+    const descriptionMsg = document.getElementById("description-msg");
+
+    if (descriptionMsg) {
+      descriptionMsg.textContent = i18next.t("translation:description");
+    }
   }
 
   function updateButtonText() {
